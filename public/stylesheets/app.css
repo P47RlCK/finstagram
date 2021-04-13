@@ -1,0 +1,37 @@
+header {
+    background-color: skyblue;
+    color:whitesmoke;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+main{
+    background-color: white;
+    padding: 13px;
+}
+
+.finstagram-post {
+margin-bottom: 48px;
+}
+
+.finstagram-post .user-info img{
+    border-radius: 50%;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.my-class:hover{
+    color: red;
+}
+
+a.photo{
+    transition: padding 0.5s;
+}
+
+a.photo:hover{
+    padding: 10px;
+}
