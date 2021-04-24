@@ -1,6 +1,7 @@
 header {
     background-color: skyblue;
     color:whitesmoke;
+    
 }
 
 body{
@@ -10,6 +11,11 @@ body{
 main{
     background-color: white;
     padding: 13px;
+}
+
+/* trying to move the font in the header "Finstagram" to the right, not part of class, personal project */
+.header-font {
+    padding-left: 20px;
 }
 
 .finstagram-post {
