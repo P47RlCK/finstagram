@@ -3,9 +3,11 @@ class FinstagramPost < ActiveRecord::Base
   has_many :comments
   has_many :likes
 
-  validates_presence_of :user
-
-    def humanized_time_ago
+  validates :photo_url, :user, presence: true
+  def self.order_desc 
+    self.order(created_at: :desc)
+  end
+  def humanized_time_ago
     time_ago_in_seconds = Time.now - self.created_at
     time_ago_in_minutes = time_ago_in_seconds / 60
 
@@ -15,7 +17,7 @@ class FinstagramPost < ActiveRecord::Base
       "#{time_ago_in_minutes.to_i} minutes ago"
     end
   end
-    # New Stuff Start 
+  # New Stuff Start 
   def like_count
     self.likes.size
   end
